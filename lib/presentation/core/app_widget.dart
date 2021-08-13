@@ -4,29 +4,18 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'routes/app_router.gr.dart';
 
-<<<<<<< Updated upstream
 import '../../injection.dart';
 
-=======
->>>>>>> Stashed changes
 class AppWidget extends StatelessWidget {
   final _appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-<<<<<<< Updated upstream
       providers: [
       ],
       child: MaterialApp.router(  
         routeInformationParser: _appRouter.defaultRouteParser(), 
         routerDelegate: AutoRouterDelegate(_appRouter, navigatorObservers: () => [AutoRouteObserver()]),
-=======
-      providers: [],
-      child: MaterialApp.router(
-        routeInformationParser: _appRouter.defaultRouteParser(),
-        routerDelegate: AutoRouterDelegate(_appRouter,
-            navigatorObservers: () => [AutoRouteObserver()]),
->>>>>>> Stashed changes
         title: 'Psilotec-Mobile',
         debugShowCheckedModeBanner: false,
         theme: ThemeData.light().copyWith(

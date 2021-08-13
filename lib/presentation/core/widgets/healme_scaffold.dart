@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../routes/app_router.gr.dart';
 import 'app_drawer.dart';
-<<<<<<< Updated upstream
 import 'build_title.dart';
-=======
->>>>>>> Stashed changes
 
 class HealmeScaffold extends StatelessWidget {
   final Widget content;

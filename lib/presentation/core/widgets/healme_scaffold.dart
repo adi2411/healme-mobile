@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../routes/app_router.gr.dart';
 import 'app_drawer.dart';
-import 'build_title.dart';
 
 class HealmeScaffold extends StatelessWidget {
   final Widget content;

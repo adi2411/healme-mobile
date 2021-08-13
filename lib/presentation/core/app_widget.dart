@@ -4,18 +4,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'routes/app_router.gr.dart';
 
-import '../../injection.dart';
-
 class AppWidget extends StatelessWidget {
   final _appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [
-      ],
-      child: MaterialApp.router(  
-        routeInformationParser: _appRouter.defaultRouteParser(), 
-        routerDelegate: AutoRouterDelegate(_appRouter, navigatorObservers: () => [AutoRouteObserver()]),
+      providers: [],
+      child: MaterialApp.router(
+        routeInformationParser: _appRouter.defaultRouteParser(),
+        routerDelegate: AutoRouterDelegate(_appRouter,
+            navigatorObservers: () => [AutoRouteObserver()]),
         title: 'Psilotec-Mobile',
         debugShowCheckedModeBanner: false,
         theme: ThemeData.light().copyWith(
